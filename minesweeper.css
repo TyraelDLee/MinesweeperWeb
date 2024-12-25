@@ -178,3 +178,23 @@
     color: #fff;
     cursor: pointer;
 }
+
+#face-icon{
+    background-size: 100%;
+}
+
+#face-icon.unpressed{
+    background-image: url("./assets/face_unpressed.svg");
+}
+
+#face-icon.pressed{
+    background-image: url("./assets/face_pressed.svg");
+}
+
+#face-icon.win{
+    background-image: url("./assets/face_win.svg");
+}
+
+#face-icon.lose{
+    background-image: url("./assets/face_lose.svg");
+}

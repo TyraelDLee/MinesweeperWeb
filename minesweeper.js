@@ -80,6 +80,28 @@
         }
         setMineRemain(mine);
         let map = [], mouseDown = false, blockArr = [], firstClick = true, remainingMine = mine;
+        let face = document.getElementById('face-icon'), facePressed = false;
+        face.onmousedown = ()=>{
+            facePressed = true;
+            face.classList.add('pressed');
+            face.classList.remove('unpressed', 'win', 'lose');
+        }
+        // face.onmouseleave = ()=>{
+        //     face.classList.remove('pressed');
+        //     face.classList.add('unpressed');
+        // }
+        // face.onmouseenter = ()=>{
+        //     if (facePressed){
+        //         face.classList.add('pressed');
+        //         face.classList.remove('unpressed');
+        //     }
+        // }
+        face.onmouseup = ()=>{
+            facePressed = false;
+            face.classList.remove('pressed');
+            face.classList.add('unpressed');
+            initGame(height, width, mine);
+        }
         let mineArea = document.getElementById('mine-area');
         mineArea.innerHTML = '';
         mineArea.onmouseleave = () => {
@@ -362,8 +384,11 @@
             clearInterval(timerHost)
             for (let y = 0; y < map.length; y++) {
                 for (let x = 0; x < map[y].length; x++) {
-                    if (map[y][x] === 9 && !blockArr[y][x].classList.contains('flagged') && mine)
+                    if (map[y][x] === 9 && !blockArr[y][x].classList.contains('flagged') && mine) {
                         blockArr[y][x].classList.add('b-m');
+                        face.classList.remove('pressed', 'unpressed');
+                        face.classList.add('lose');
+                    }
                     blockArr[y][x].onmousedown = null;
                     blockArr[y][x].onmouseup = null;
                     blockArr[y][x].onmouseover = null;
@@ -379,6 +404,8 @@
             if (checkWin()){
                 hitMine(false);
                 console.log('win!')
+                face.classList.remove('pressed', 'unpressed');
+                face.classList.add('win');
             }
         }
 
