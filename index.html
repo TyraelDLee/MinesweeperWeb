@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper</title>
+    <link href="minesweeper.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="head">
+    <div id="difficulty-section">
+        <div id="easy"><span>Easy</span></div>
+        <div id="mid"><span>Mid</span></div>
+        <div id="hard"><span>Hard</span></div>
+        <div id="custom">
+            <span>Custom</span>
+            <div>
+                <span>Width:</span>
+                <input type="number" min="9" max="99" id="cus-wd">
+            </div>
+            <div>
+                <span>Height:</span>
+                <input type="number" min="9" max="99" id="cus-he">
+            </div>
+            <div>
+                <span>Mine:</span>
+                <input type="number" max="999" id="cus-mi">
+<!--                max density:38-->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="game-board">
+    <div id="top-area"></div>
+    <div id="mine-area"></div>
+</div>
+<script src="minesweeper.js"></script>
+</body>
+</html>

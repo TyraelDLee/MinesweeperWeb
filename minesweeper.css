@@ -1,0 +1,136 @@
+#difficulty-section{
+    display: flex;
+    justify-content: center;
+
+}
+
+#difficulty-section div{
+    margin: 5px 10px;
+    cursor: pointer;
+    user-select: none;
+    height: 35px;
+    padding: 5px 15px;
+    background: rgb(35 173 229);
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#difficulty-section .selected, #custom.selected input, #custom.selected div{
+    background: #fb7299;
+    font-weight: bold;
+}
+
+#difficulty-section span{
+    line-height: 35px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#custom{
+    display: flex;
+}
+
+#custom div{
+    /*display: none!important;*/
+    cursor: default;
+    margin: 0 5px!important;
+    padding: 0;
+}
+
+#custom input{
+    /*display: none;*/
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: rgb(35 173 229);
+    color: #fff;
+    max-width: 50px;
+    transition: 0.3s;
+}
+
+#custom input:focus-visible{
+    outline: none;
+
+}
+
+#custom.selected input{
+    border-bottom: 2px solid #fff;
+    /*display: block;*/
+}
+
+#game-board{
+    overflow: scroll;
+}
+
+#mine-area{
+    position: absolute;
+}
+.game-block{
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+}
+
+.game-block{
+    background-image: url("./assets/bc.svg");
+    float: left;
+}
+
+.game-block.pressed{
+    background-image: url("./assets/bp.svg");
+}
+
+.game-block.closed{
+    background-image: url("./assets/bc.svg");
+}
+
+.game-block.flagged{
+    background-image: url("./assets/bf.svg");
+}
+
+.game-block.b-0{
+    background-image: url("./assets/b0.svg");
+}
+
+.game-block.b-1{
+    background-image: url("./assets/b1.svg");
+}
+
+.game-block.b-2{
+    background-image: url("./assets/b2.svg");
+}
+
+.game-block.b-3{
+    background-image: url("./assets/b3.svg");
+}
+
+.game-block.b-4{
+    background-image: url("./assets/b4.svg");
+}
+
+.game-block.b-5{
+    background-image: url("./assets/b5.svg");
+}
+
+.game-block.b-6{
+    background-image: url("./assets/b6.svg");
+}
+
+.game-block.b-7{
+    background-image: url("./assets/b7.svg");
+}
+
+.game-block.b-8{
+    background-image: url("./assets/b8.svg");
+}
+
+.game-block.b-m{
+    background-image: url("./assets/mine.svg");
+}
+
+.game-block.b-hm{
+    background-image: url("./assets/mine-hit.svg");
+}
