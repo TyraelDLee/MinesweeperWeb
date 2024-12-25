@@ -60,11 +60,11 @@
 
 #game-board{
     overflow: scroll;
+    background: rgba(192,192,192,0.5);
+    position: absolute;
+    width: 100%;
 }
 
-#mine-area{
-    position: absolute;
-}
 .game-block{
     width: 25px;
     height: 25px;
@@ -133,4 +133,48 @@
 
 .game-block.b-hm{
     background-image: url("./assets/mine-hit.svg");
+}
+
+#top-area{
+    display: none;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+#top-area img{
+    width: 20px;
+    background-size: 100%;
+}
+
+#mine-remain, #timer{
+    /*display: flex;*/
+    background-image: url("assets/nums_background.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 5px;
+}
+
+#mine-remain div, #timer div{
+    display: flex;
+    padding: 4px;
+}
+#mine-remain img:nth-child(2), #timer img:nth-child(2){
+    padding: 0 3px;
+}
+
+/*#mine-remain img{*/
+/*    margin-right: 2px;*/
+/*}*/
+
+/*#timer img{*/
+/*    margin-left: 2px;*/
+/*}*/
+
+#custom-apply{
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(35 173 229);
+    color: #fff;
+    cursor: pointer;
 }
