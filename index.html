@@ -33,27 +33,49 @@
     </div>
 </div>
 <div id="game-board">
-    <div id="top-area">
-        <div id="mine-remain">
-            <div>
-                <img src="assets/d0.svg">
-                <img src="assets/d0.svg">
-                <img src="assets/d0.svg">
-            </div>
-
-        </div>
-
-        <div id="face-icon" style="width: 50px; height: 50px" class="unpressed">
-        </div>
-        <div id="timer">
-            <div>
-                <img src="assets/d0.svg">
-                <img src="assets/d0.svg">
-                <img src="assets/d0.svg">
-            </div>
-        </div>
+    <div class="border border-g-h">
+        <div class="border-c left top border-img"></div>
+        <div class="border-h border-img"></div>
+        <div class="border-c right top border-img"></div>
     </div>
-    <div id="mine-area"></div>
+    <div id="top-area">
+        <div class="border border-v"></div>
+        <div class="top-display">
+            <div id="mine-remain">
+                <div>
+                    <img src="assets/d0.svg">
+                    <img src="assets/d0.svg">
+                    <img src="assets/d0.svg">
+                </div>
+
+            </div>
+            <div id="face-icon" style="width: 45px; height: 45px" class="unpressed"></div>
+            <div id="timer">
+                <div>
+                    <img src="assets/d0.svg">
+                    <img src="assets/d0.svg">
+                    <img src="assets/d0.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="border border-v"></div>
+    </div>
+    <div class="border border-g-h">
+        <div class="border-t left border-img"></div>
+        <div class="border-h border-img"></div>
+        <div class="border-t right border-img"></div>
+    </div>
+    <div id="game-area">
+        <div class="border border-v"></div>
+        <div id="mine-area"></div>
+        <div class="border border-v"></div>
+    </div>
+    <div class="border border-g-h">
+        <div class="border-c left bottom border-img"></div>
+        <div class="border-h border-img"></div>
+        <div class="border-c right bottom border-img"></div>
+    </div>
 </div>
 <script src="minesweeper.js"></script>
 </body>

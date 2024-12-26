@@ -62,14 +62,28 @@
     }
 
     function setGameBoardPosition(width, height) {
-        let boardWidth = width * blockSize, gameBoard = document.getElementById('game-board'), mineArea = document.getElementById('mine-area'), topArea = document.getElementById('top-area');
+        let boardWidth = width * blockSize, gameBoard = document.getElementById('game-board'), mineArea = document.getElementById('mine-area'), gameArea = document.getElementById('game-area'), topArea = document.getElementById('top-area');
 
         mineArea.setAttribute('style', `width: ${width * blockSize}px; height: ${height * blockSize}px;`);
-        topArea.setAttribute('style', `width: ${width * blockSize}px; height: ${2 * blockSize}px; display: flex;`);
+        topArea.setAttribute('style', `width: ${width * blockSize +32}px; height: ${2 * blockSize + 5}px; display: flex;`);
+        document.getElementsByClassName('top-display')[0].setAttribute('style', `width: ${width * blockSize}px;`);
+        gameArea.setAttribute('style', `height: ${height * blockSize}px;`);
+        gameArea.style.marginLeft = window.outerWidth - boardWidth < 0?16:((window.outerWidth - boardWidth) / 2 - 16) + 'px';
+        topArea.style.marginLeft = window.outerWidth - boardWidth < 0?16:((window.outerWidth - boardWidth) / 2 - 16) + 'px';
 
-        mineArea.style.marginLeft = window.outerWidth - boardWidth < 0?0:(window.outerWidth - boardWidth) / 2 + 'px';
-        topArea.style.marginLeft = window.outerWidth - boardWidth < 0?0:(window.outerWidth - boardWidth) / 2 + 'px';
-
+        for (let horBorder of document.getElementsByClassName('border-g-h')){
+            horBorder.setAttribute('style', `height: 16px; width: ${boardWidth+32}px;`);
+            horBorder.style.marginLeft = window.outerWidth - boardWidth < 0?16:((window.outerWidth - boardWidth) / 2 - 16) + 'px';
+            try{
+                horBorder.getElementsByClassName('border-c')[0].style.width = '16px';
+                horBorder.getElementsByClassName('border-c')[1].style.width = '16px';
+            }catch (e) {}
+            try{
+                horBorder.getElementsByClassName('border-t')[0].style.width = '16px';
+                horBorder.getElementsByClassName('border-t')[1].style.width = '16px';
+            }catch (e) {}
+            horBorder.getElementsByClassName('border-h')[0].style.width = width * blockSize + 'px';
+        }
     }
 
     function initGame(height, width, mine) {
@@ -79,6 +93,7 @@
             setGameBoardPosition(width, height);
         }
         setMineRemain(mine);
+        initTimer();
         let map = [], mouseDown = false, blockArr = [], firstClick = true, remainingMine = mine;
         let face = document.getElementById('face-icon'), facePressed = false;
         face.onmousedown = ()=>{
@@ -444,6 +459,14 @@
                 }
             }, 1000);
 
+        }
+
+        function initTimer(){
+            let text = '000';
+            let element = document.getElementById('timer');
+            for (let i = 1; i <= 3; i++) {
+                element.getElementsByTagName('img')[3-i].src = `assets/d${text.charAt(3-i)}.svg`;
+            }
         }
 
         function getSolution(){
