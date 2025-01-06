@@ -475,14 +475,16 @@
                     let block = blockArr[y][x];
                     let e = document.createEvent("MouseEvents");
                     if(map[y][x] !== 9) {
-
-
+                        if (blockArr[y][x].classList.contains('flagged')) {
+                            e.initEvent("contextmenu", false, false);
+                            block.dispatchEvent(e);
+                        }
                         e.initEvent("mousedown", false, false);
                         block.dispatchEvent(e);
                         e.initEvent("mouseup", false, false);
                         block.dispatchEvent(e);
                     }
-                    if (map[y][x] === 9){
+                    if (map[y][x] === 9 && !blockArr[y][x].classList.contains('flagged')){
                         e.initEvent("contextmenu", false, false);
                         block.dispatchEvent(e);
                     }
