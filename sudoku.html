@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <link href="css/sudoku.css" type="text/css" rel="stylesheet">
+</head>
+<body mode="">
+    <div class="game-section">
+        <div class="board-section">
+            <div class="board-row" id="board-row-0">
+                <div class="number-block" id="board-row-0-0" coord="0-0-0">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-0-0-note-0">1</div>
+                            <div class="note-value" id="board-row-0-0-note-1">2</div>
+                            <div class="note-value" id="board-row-0-0-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-0-note-3">4</div>
+                            <div class="note-value" id="board-row-0-0-note-4">5</div>
+                            <div class="note-value" id="board-row-0-0-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-0-note-6">7</div>
+                            <div class="note-value" id="board-row-0-0-note-7">8</div>
+                            <div class="note-value" id="board-row-0-0-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-0-1" coord="0-1-0">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-0-1-note-0">1</div>
+                            <div class="note-value" id="board-row-0-1-note-1">2</div>
+                            <div class="note-value" id="board-row-0-1-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-1-note-3">4</div>
+                            <div class="note-value" id="board-row-0-1-note-4">5</div>
+                            <div class="note-value" id="board-row-0-1-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-1-note-6">7</div>
+                            <div class="note-value" id="board-row-0-1-note-7">8</div>
+                            <div class="note-value" id="board-row-0-1-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-0-2" coord="0-2-0">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-0-2-note-0">1</div>
+                            <div class="note-value" id="board-row-0-2-note-1">2</div>
+                            <div class="note-value" id="board-row-0-2-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-2-note-3">4</div>
+                            <div class="note-value" id="board-row-0-2-note-4">5</div>
+                            <div class="note-value" id="board-row-0-2-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-2-note-6">7</div>
+                            <div class="note-value" id="board-row-0-2-note-7">8</div>
+                            <div class="note-value" id="board-row-0-2-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-0-3" coord="0-3-1">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-0-3-note-0">1</div>
+                            <div class="note-value" id="board-row-0-3-note-1">2</div>
+                            <div class="note-value" id="board-row-0-3-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-3-note-3">4</div>
+                            <div class="note-value" id="board-row-0-3-note-4">5</div>
+                            <div class="note-value" id="board-row-0-3-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-3-note-6">7</div>
+                            <div class="note-value" id="board-row-0-3-note-7">8</div>
+                            <div class="note-value" id="board-row-0-3-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-0-4" coord="0-4-1">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-0-4-note-0">1</div>
+                            <div class="note-value" id="board-row-0-4-note-1">2</div>
+                            <div class="note-value" id="board-row-0-4-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-4-note-3">4</div>
+                            <div class="note-value" id="board-row-0-4-note-4">5</div>
+                            <div class="note-value" id="board-row-0-4-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-4-note-6">7</div>
+                            <div class="note-value" id="board-row-0-4-note-7">8</div>
+                            <div class="note-value" id="board-row-0-4-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-0-5" coord="0-5-1">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-0-5-note-0">1</div>
+                            <div class="note-value" id="board-row-0-5-note-1">2</div>
+                            <div class="note-value" id="board-row-0-5-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-5-note-3">4</div>
+                            <div class="note-value" id="board-row-0-5-note-4">5</div>
+                            <div class="note-value" id="board-row-0-5-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-5-note-6">7</div>
+                            <div class="note-value" id="board-row-0-5-note-7">8</div>
+                            <div class="note-value" id="board-row-0-5-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-0-6" coord="0-6-2">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-0-6-note-0">1</div>
+                            <div class="note-value" id="board-row-0-6-note-1">2</div>
+                            <div class="note-value" id="board-row-0-6-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-6-note-3">4</div>
+                            <div class="note-value" id="board-row-0-6-note-4">5</div>
+                            <div class="note-value" id="board-row-0-6-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-6-note-6">7</div>
+                            <div class="note-value" id="board-row-0-6-note-7">8</div>
+                            <div class="note-value" id="board-row-0-6-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-0-7" coord="0-7-2">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-0-7-note-0">1</div>
+                            <div class="note-value" id="board-row-0-7-note-1">2</div>
+                            <div class="note-value" id="board-row-0-7-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-7-note-3">4</div>
+                            <div class="note-value" id="board-row-0-7-note-4">5</div>
+                            <div class="note-value" id="board-row-0-7-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-7-note-6">7</div>
+                            <div class="note-value" id="board-row-0-7-note-7">8</div>
+                            <div class="note-value" id="board-row-0-7-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-0-8" coord="0-8-2">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-0-8-note-0">1</div>
+                            <div class="note-value" id="board-row-0-8-note-1">2</div>
+                            <div class="note-value" id="board-row-0-8-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-8-note-3">4</div>
+                            <div class="note-value" id="board-row-0-8-note-4">5</div>
+                            <div class="note-value" id="board-row-0-8-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-0-8-note-6">7</div>
+                            <div class="note-value" id="board-row-0-8-note-7">8</div>
+                            <div class="note-value" id="board-row-0-8-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+            </div>
+            <div class="board-row" id="board-row-1">
+                <div class="number-block" id="board-row-1-0" coord="1-0-0">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-1-0-note-0">1</div>
+                            <div class="note-value" id="board-row-1-0-note-1">2</div>
+                            <div class="note-value" id="board-row-1-0-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-0-note-3">4</div>
+                            <div class="note-value" id="board-row-1-0-note-4">5</div>
+                            <div class="note-value" id="board-row-1-0-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-0-note-6">7</div>
+                            <div class="note-value" id="board-row-1-0-note-7">8</div>
+                            <div class="note-value" id="board-row-1-0-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-1-1" coord="1-1-0">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-1-1-note-0">1</div>
+                            <div class="note-value" id="board-row-1-1-note-1">2</div>
+                            <div class="note-value" id="board-row-1-1-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-1-note-3">4</div>
+                            <div class="note-value" id="board-row-1-1-note-4">5</div>
+                            <div class="note-value" id="board-row-1-1-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-1-note-6">7</div>
+                            <div class="note-value" id="board-row-1-1-note-7">8</div>
+                            <div class="note-value" id="board-row-1-1-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-1-2" coord="1-2-0">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-1-2-note-0">1</div>
+                            <div class="note-value" id="board-row-1-2-note-1">2</div>
+                            <div class="note-value" id="board-row-1-2-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-2-note-3">4</div>
+                            <div class="note-value" id="board-row-1-2-note-4">5</div>
+                            <div class="note-value" id="board-row-1-2-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-2-note-6">7</div>
+                            <div class="note-value" id="board-row-1-2-note-7">8</div>
+                            <div class="note-value" id="board-row-1-2-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-1-3" coord="1-3-1">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-1-3-note-0">1</div>
+                            <div class="note-value" id="board-row-1-3-note-1">2</div>
+                            <div class="note-value" id="board-row-1-3-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-3-note-3">4</div>
+                            <div class="note-value" id="board-row-1-3-note-4">5</div>
+                            <div class="note-value" id="board-row-1-3-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-3-note-6">7</div>
+                            <div class="note-value" id="board-row-1-3-note-7">8</div>
+                            <div class="note-value" id="board-row-1-3-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-1-4" coord="1-4-1">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-1-4-note-0">1</div>
+                            <div class="note-value" id="board-row-1-4-note-1">2</div>
+                            <div class="note-value" id="board-row-1-4-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-4-note-3">4</div>
+                            <div class="note-value" id="board-row-1-4-note-4">5</div>
+                            <div class="note-value" id="board-row-1-4-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-4-note-6">7</div>
+                            <div class="note-value" id="board-row-1-4-note-7">8</div>
+                            <div class="note-value" id="board-row-1-4-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-1-5" coord="1-5-1">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-1-5-note-0">1</div>
+                            <div class="note-value" id="board-row-1-5-note-1">2</div>
+                            <div class="note-value" id="board-row-1-5-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-5-note-3">4</div>
+                            <div class="note-value" id="board-row-1-5-note-4">5</div>
+                            <div class="note-value" id="board-row-1-5-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-5-note-6">7</div>
+                            <div class="note-value" id="board-row-1-5-note-7">8</div>
+                            <div class="note-value" id="board-row-1-5-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-1-6" coord="1-6-2">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-1-6-note-0">1</div>
+                            <div class="note-value" id="board-row-1-6-note-1">2</div>
+                            <div class="note-value" id="board-row-1-6-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-6-note-3">4</div>
+                            <div class="note-value" id="board-row-1-6-note-4">5</div>
+                            <div class="note-value" id="board-row-1-6-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-6-note-6">7</div>
+                            <div class="note-value" id="board-row-1-6-note-7">8</div>
+                            <div class="note-value" id="board-row-1-6-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-1-7" coord="1-7-2">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-1-7-note-0">1</div>
+                            <div class="note-value" id="board-row-1-7-note-1">2</div>
+                            <div class="note-value" id="board-row-1-7-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-7-note-3">4</div>
+                            <div class="note-value" id="board-row-1-7-note-4">5</div>
+                            <div class="note-value" id="board-row-1-7-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-7-note-6">7</div>
+                            <div class="note-value" id="board-row-1-7-note-7">8</div>
+                            <div class="note-value" id="board-row-1-7-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-1-8" coord="1-8-2">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-1-8-note-0">1</div>
+                            <div class="note-value" id="board-row-1-8-note-1">2</div>
+                            <div class="note-value" id="board-row-1-8-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-8-note-3">4</div>
+                            <div class="note-value" id="board-row-1-8-note-4">5</div>
+                            <div class="note-value" id="board-row-1-8-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-1-8-note-6">7</div>
+                            <div class="note-value" id="board-row-1-8-note-7">8</div>
+                            <div class="note-value" id="board-row-1-8-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+            </div>
+            <div class="board-row" id="board-row-2">
+                <div class="number-block" id="board-row-2-0" coord="2-0-0">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-2-0-note-0">1</div>
+                            <div class="note-value" id="board-row-2-0-note-1">2</div>
+                            <div class="note-value" id="board-row-2-0-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-0-note-3">4</div>
+                            <div class="note-value" id="board-row-2-0-note-4">5</div>
+                            <div class="note-value" id="board-row-2-0-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-0-note-6">7</div>
+                            <div class="note-value" id="board-row-2-0-note-7">8</div>
+                            <div class="note-value" id="board-row-2-0-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-2-1" coord="2-1-0">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-2-1-note-0">1</div>
+                            <div class="note-value" id="board-row-2-1-note-1">2</div>
+                            <div class="note-value" id="board-row-2-1-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-1-note-3">4</div>
+                            <div class="note-value" id="board-row-2-1-note-4">5</div>
+                            <div class="note-value" id="board-row-2-1-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-1-note-6">7</div>
+                            <div class="note-value" id="board-row-2-1-note-7">8</div>
+                            <div class="note-value" id="board-row-2-1-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-2-2" coord="2-2-0">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-2-2-note-0">1</div>
+                            <div class="note-value" id="board-row-2-2-note-1">2</div>
+                            <div class="note-value" id="board-row-2-2-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-2-note-3">4</div>
+                            <div class="note-value" id="board-row-2-2-note-4">5</div>
+                            <div class="note-value" id="board-row-2-2-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-2-note-6">7</div>
+                            <div class="note-value" id="board-row-2-2-note-7">8</div>
+                            <div class="note-value" id="board-row-2-2-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-2-3" coord="2-3-1">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-2-3-note-0">1</div>
+                            <div class="note-value" id="board-row-2-3-note-1">2</div>
+                            <div class="note-value" id="board-row-2-3-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-3-note-3">4</div>
+                            <div class="note-value" id="board-row-2-3-note-4">5</div>
+                            <div class="note-value" id="board-row-2-3-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-3-note-6">7</div>
+                            <div class="note-value" id="board-row-2-3-note-7">8</div>
+                            <div class="note-value" id="board-row-2-3-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-2-4" coord="2-4-1">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-2-4-note-0">1</div>
+                            <div class="note-value" id="board-row-2-4-note-1">2</div>
+                            <div class="note-value" id="board-row-2-4-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-4-note-3">4</div>
+                            <div class="note-value" id="board-row-2-4-note-4">5</div>
+                            <div class="note-value" id="board-row-2-4-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-4-note-6">7</div>
+                            <div class="note-value" id="board-row-2-4-note-7">8</div>
+                            <div class="note-value" id="board-row-2-4-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-2-5" coord="2-5-1">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-2-5-note-0">1</div>
+                            <div class="note-value" id="board-row-2-5-note-1">2</div>
+                            <div class="note-value" id="board-row-2-5-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-5-note-3">4</div>
+                            <div class="note-value" id="board-row-2-5-note-4">5</div>
+                            <div class="note-value" id="board-row-2-5-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-5-note-6">7</div>
+                            <div class="note-value" id="board-row-2-5-note-7">8</div>
+                            <div class="note-value" id="board-row-2-5-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-2-6" coord="2-6-2">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-2-6-note-0">1</div>
+                            <div class="note-value" id="board-row-2-6-note-1">2</div>
+                            <div class="note-value" id="board-row-2-6-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-6-note-3">4</div>
+                            <div class="note-value" id="board-row-2-6-note-4">5</div>
+                            <div class="note-value" id="board-row-2-6-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-6-note-6">7</div>
+                            <div class="note-value" id="board-row-2-6-note-7">8</div>
+                            <div class="note-value" id="board-row-2-6-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-2-7" coord="2-7-2">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-2-7-note-0">1</div>
+                            <div class="note-value" id="board-row-2-7-note-1">2</div>
+                            <div class="note-value" id="board-row-2-7-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-7-note-3">4</div>
+                            <div class="note-value" id="board-row-2-7-note-4">5</div>
+                            <div class="note-value" id="board-row-2-7-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-7-note-6">7</div>
+                            <div class="note-value" id="board-row-2-7-note-7">8</div>
+                            <div class="note-value" id="board-row-2-7-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-2-8" coord="2-8-2">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-2-8-note-0">1</div>
+                            <div class="note-value" id="board-row-2-8-note-1">2</div>
+                            <div class="note-value" id="board-row-2-8-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-8-note-3">4</div>
+                            <div class="note-value" id="board-row-2-8-note-4">5</div>
+                            <div class="note-value" id="board-row-2-8-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-2-8-note-6">7</div>
+                            <div class="note-value" id="board-row-2-8-note-7">8</div>
+                            <div class="note-value" id="board-row-2-8-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+            </div>
+            <div class="board-row" id="board-row-3">
+                <div class="number-block" id="board-row-3-0" coord="3-0-3">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-3-0-note-0">1</div>
+                            <div class="note-value" id="board-row-3-0-note-1">2</div>
+                            <div class="note-value" id="board-row-3-0-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-0-note-3">4</div>
+                            <div class="note-value" id="board-row-3-0-note-4">5</div>
+                            <div class="note-value" id="board-row-3-0-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-0-note-6">7</div>
+                            <div class="note-value" id="board-row-3-0-note-7">8</div>
+                            <div class="note-value" id="board-row-3-0-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-3-1" coord="3-1-3">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-3-1-note-0">1</div>
+                            <div class="note-value" id="board-row-3-1-note-1">2</div>
+                            <div class="note-value" id="board-row-3-1-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-1-note-3">4</div>
+                            <div class="note-value" id="board-row-3-1-note-4">5</div>
+                            <div class="note-value" id="board-row-3-1-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-1-note-6">7</div>
+                            <div class="note-value" id="board-row-3-1-note-7">8</div>
+                            <div class="note-value" id="board-row-3-1-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-3-2" coord="3-2-3">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-3-2-note-0">1</div>
+                            <div class="note-value" id="board-row-3-2-note-1">2</div>
+                            <div class="note-value" id="board-row-3-2-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-2-note-3">4</div>
+                            <div class="note-value" id="board-row-3-2-note-4">5</div>
+                            <div class="note-value" id="board-row-3-2-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-2-note-6">7</div>
+                            <div class="note-value" id="board-row-3-2-note-7">8</div>
+                            <div class="note-value" id="board-row-3-2-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-3-3" coord="3-3-4">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-3-3-note-0">1</div>
+                            <div class="note-value" id="board-row-3-3-note-1">2</div>
+                            <div class="note-value" id="board-row-3-3-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-3-note-3">4</div>
+                            <div class="note-value" id="board-row-3-3-note-4">5</div>
+                            <div class="note-value" id="board-row-3-3-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-3-note-6">7</div>
+                            <div class="note-value" id="board-row-3-3-note-7">8</div>
+                            <div class="note-value" id="board-row-3-3-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-3-4" coord="3-4-4">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-3-4-note-0">1</div>
+                            <div class="note-value" id="board-row-3-4-note-1">2</div>
+                            <div class="note-value" id="board-row-3-4-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-4-note-3">4</div>
+                            <div class="note-value" id="board-row-3-4-note-4">5</div>
+                            <div class="note-value" id="board-row-3-4-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-4-note-6">7</div>
+                            <div class="note-value" id="board-row-3-4-note-7">8</div>
+                            <div class="note-value" id="board-row-3-4-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-3-5" coord="3-5-4">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-3-5-note-0">1</div>
+                            <div class="note-value" id="board-row-3-5-note-1">2</div>
+                            <div class="note-value" id="board-row-3-5-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-5-note-3">4</div>
+                            <div class="note-value" id="board-row-3-5-note-4">5</div>
+                            <div class="note-value" id="board-row-3-5-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-5-note-6">7</div>
+                            <div class="note-value" id="board-row-3-5-note-7">8</div>
+                            <div class="note-value" id="board-row-3-5-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-3-6" coord="3-6-5">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-3-6-note-0">1</div>
+                            <div class="note-value" id="board-row-3-6-note-1">2</div>
+                            <div class="note-value" id="board-row-3-6-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-6-note-3">4</div>
+                            <div class="note-value" id="board-row-3-6-note-4">5</div>
+                            <div class="note-value" id="board-row-3-6-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-6-note-6">7</div>
+                            <div class="note-value" id="board-row-3-6-note-7">8</div>
+                            <div class="note-value" id="board-row-3-6-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-3-7" coord="3-7-5">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-3-7-note-0">1</div>
+                            <div class="note-value" id="board-row-3-7-note-1">2</div>
+                            <div class="note-value" id="board-row-3-7-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-7-note-3">4</div>
+                            <div class="note-value" id="board-row-3-7-note-4">5</div>
+                            <div class="note-value" id="board-row-3-7-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-7-note-6">7</div>
+                            <div class="note-value" id="board-row-3-7-note-7">8</div>
+                            <div class="note-value" id="board-row-3-7-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-3-8" coord="3-8-5">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-3-8-note-0">1</div>
+                            <div class="note-value" id="board-row-3-8-note-1">2</div>
+                            <div class="note-value" id="board-row-3-8-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-8-note-3">4</div>
+                            <div class="note-value" id="board-row-3-8-note-4">5</div>
+                            <div class="note-value" id="board-row-3-8-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-3-8-note-6">7</div>
+                            <div class="note-value" id="board-row-3-8-note-7">8</div>
+                            <div class="note-value" id="board-row-3-8-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+            </div>
+            <div class="board-row" id="board-row-4">
+                <div class="number-block" id="board-row-4-0" coord="4-0-3">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-4-0-note-0">1</div>
+                            <div class="note-value" id="board-row-4-0-note-1">2</div>
+                            <div class="note-value" id="board-row-4-0-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-0-note-3">4</div>
+                            <div class="note-value" id="board-row-4-0-note-4">5</div>
+                            <div class="note-value" id="board-row-4-0-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-0-note-6">7</div>
+                            <div class="note-value" id="board-row-4-0-note-7">8</div>
+                            <div class="note-value" id="board-row-4-0-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-4-1" coord="4-1-3">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-4-1-note-0">1</div>
+                            <div class="note-value" id="board-row-4-1-note-1">2</div>
+                            <div class="note-value" id="board-row-4-1-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-1-note-3">4</div>
+                            <div class="note-value" id="board-row-4-1-note-4">5</div>
+                            <div class="note-value" id="board-row-4-1-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-1-note-6">7</div>
+                            <div class="note-value" id="board-row-4-1-note-7">8</div>
+                            <div class="note-value" id="board-row-4-1-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-4-2" coord="4-2-3">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-4-2-note-0">1</div>
+                            <div class="note-value" id="board-row-4-2-note-1">2</div>
+                            <div class="note-value" id="board-row-4-2-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-2-note-3">4</div>
+                            <div class="note-value" id="board-row-4-2-note-4">5</div>
+                            <div class="note-value" id="board-row-4-2-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-2-note-6">7</div>
+                            <div class="note-value" id="board-row-4-2-note-7">8</div>
+                            <div class="note-value" id="board-row-4-2-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-4-3" coord="4-3-4">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-4-3-note-0">1</div>
+                            <div class="note-value" id="board-row-4-3-note-1">2</div>
+                            <div class="note-value" id="board-row-4-3-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-3-note-3">4</div>
+                            <div class="note-value" id="board-row-4-3-note-4">5</div>
+                            <div class="note-value" id="board-row-4-3-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-3-note-6">7</div>
+                            <div class="note-value" id="board-row-4-3-note-7">8</div>
+                            <div class="note-value" id="board-row-4-3-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-4-4" coord="4-4-4">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-4-4-note-0">1</div>
+                            <div class="note-value" id="board-row-4-4-note-1">2</div>
+                            <div class="note-value" id="board-row-4-4-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-4-note-3">4</div>
+                            <div class="note-value" id="board-row-4-4-note-4">5</div>
+                            <div class="note-value" id="board-row-4-4-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-4-note-6">7</div>
+                            <div class="note-value" id="board-row-4-4-note-7">8</div>
+                            <div class="note-value" id="board-row-4-4-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-4-5" coord="4-5-4">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-4-5-note-0">1</div>
+                            <div class="note-value" id="board-row-4-5-note-1">2</div>
+                            <div class="note-value" id="board-row-4-5-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-5-note-3">4</div>
+                            <div class="note-value" id="board-row-4-5-note-4">5</div>
+                            <div class="note-value" id="board-row-4-5-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-5-note-6">7</div>
+                            <div class="note-value" id="board-row-4-5-note-7">8</div>
+                            <div class="note-value" id="board-row-4-5-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-4-6" coord="4-6-5">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-4-6-note-0">1</div>
+                            <div class="note-value" id="board-row-4-6-note-1">2</div>
+                            <div class="note-value" id="board-row-4-6-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-6-note-3">4</div>
+                            <div class="note-value" id="board-row-4-6-note-4">5</div>
+                            <div class="note-value" id="board-row-4-6-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-6-note-6">7</div>
+                            <div class="note-value" id="board-row-4-6-note-7">8</div>
+                            <div class="note-value" id="board-row-4-6-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-4-7" coord="4-7-5">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-4-7-note-0">1</div>
+                            <div class="note-value" id="board-row-4-7-note-1">2</div>
+                            <div class="note-value" id="board-row-4-7-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-7-note-3">4</div>
+                            <div class="note-value" id="board-row-4-7-note-4">5</div>
+                            <div class="note-value" id="board-row-4-7-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-7-note-6">7</div>
+                            <div class="note-value" id="board-row-4-7-note-7">8</div>
+                            <div class="note-value" id="board-row-4-7-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-4-8" coord="4-8-5">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-4-8-note-0">1</div>
+                            <div class="note-value" id="board-row-4-8-note-1">2</div>
+                            <div class="note-value" id="board-row-4-8-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-8-note-3">4</div>
+                            <div class="note-value" id="board-row-4-8-note-4">5</div>
+                            <div class="note-value" id="board-row-4-8-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-4-8-note-6">7</div>
+                            <div class="note-value" id="board-row-4-8-note-7">8</div>
+                            <div class="note-value" id="board-row-4-8-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+            </div>
+            <div class="board-row" id="board-row-5">
+                <div class="number-block" id="board-row-5-0" coord="5-0-3">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-5-0-note-0">1</div>
+                            <div class="note-value" id="board-row-5-0-note-1">2</div>
+                            <div class="note-value" id="board-row-5-0-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-0-note-3">4</div>
+                            <div class="note-value" id="board-row-5-0-note-4">5</div>
+                            <div class="note-value" id="board-row-5-0-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-0-note-6">7</div>
+                            <div class="note-value" id="board-row-5-0-note-7">8</div>
+                            <div class="note-value" id="board-row-5-0-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-5-1" coord="5-1-3">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-5-1-note-0">1</div>
+                            <div class="note-value" id="board-row-5-1-note-1">2</div>
+                            <div class="note-value" id="board-row-5-1-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-1-note-3">4</div>
+                            <div class="note-value" id="board-row-5-1-note-4">5</div>
+                            <div class="note-value" id="board-row-5-1-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-1-note-6">7</div>
+                            <div class="note-value" id="board-row-5-1-note-7">8</div>
+                            <div class="note-value" id="board-row-5-1-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-5-2" coord="5-2-3">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-5-2-note-0">1</div>
+                            <div class="note-value" id="board-row-5-2-note-1">2</div>
+                            <div class="note-value" id="board-row-5-2-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-2-note-3">4</div>
+                            <div class="note-value" id="board-row-5-2-note-4">5</div>
+                            <div class="note-value" id="board-row-5-2-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-2-note-6">7</div>
+                            <div class="note-value" id="board-row-5-2-note-7">8</div>
+                            <div class="note-value" id="board-row-5-2-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-5-3" coord="5-3-4">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-5-3-note-0">1</div>
+                            <div class="note-value" id="board-row-5-3-note-1">2</div>
+                            <div class="note-value" id="board-row-5-3-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-3-note-3">4</div>
+                            <div class="note-value" id="board-row-5-3-note-4">5</div>
+                            <div class="note-value" id="board-row-5-3-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-3-note-6">7</div>
+                            <div class="note-value" id="board-row-5-3-note-7">8</div>
+                            <div class="note-value" id="board-row-5-3-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-5-4" coord="5-4-4">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-5-4-note-0">1</div>
+                            <div class="note-value" id="board-row-5-4-note-1">2</div>
+                            <div class="note-value" id="board-row-5-4-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-4-note-3">4</div>
+                            <div class="note-value" id="board-row-5-4-note-4">5</div>
+                            <div class="note-value" id="board-row-5-4-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-4-note-6">7</div>
+                            <div class="note-value" id="board-row-5-4-note-7">8</div>
+                            <div class="note-value" id="board-row-5-4-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-5-5" coord="5-5-4">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-5-5-note-0">1</div>
+                            <div class="note-value" id="board-row-5-5-note-1">2</div>
+                            <div class="note-value" id="board-row-5-5-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-5-note-3">4</div>
+                            <div class="note-value" id="board-row-5-5-note-4">5</div>
+                            <div class="note-value" id="board-row-5-5-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-5-note-6">7</div>
+                            <div class="note-value" id="board-row-5-5-note-7">8</div>
+                            <div class="note-value" id="board-row-5-5-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-5-6" coord="5-6-5">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-5-6-note-0">1</div>
+                            <div class="note-value" id="board-row-5-6-note-1">2</div>
+                            <div class="note-value" id="board-row-5-6-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-6-note-3">4</div>
+                            <div class="note-value" id="board-row-5-6-note-4">5</div>
+                            <div class="note-value" id="board-row-5-6-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-6-note-6">7</div>
+                            <div class="note-value" id="board-row-5-6-note-7">8</div>
+                            <div class="note-value" id="board-row-5-6-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-5-7" coord="5-7-5">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-5-7-note-0">1</div>
+                            <div class="note-value" id="board-row-5-7-note-1">2</div>
+                            <div class="note-value" id="board-row-5-7-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-7-note-3">4</div>
+                            <div class="note-value" id="board-row-5-7-note-4">5</div>
+                            <div class="note-value" id="board-row-5-7-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-7-note-6">7</div>
+                            <div class="note-value" id="board-row-5-7-note-7">8</div>
+                            <div class="note-value" id="board-row-5-7-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-5-8" coord="5-8-5">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-5-8-note-0">1</div>
+                            <div class="note-value" id="board-row-5-8-note-1">2</div>
+                            <div class="note-value" id="board-row-5-8-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-8-note-3">4</div>
+                            <div class="note-value" id="board-row-5-8-note-4">5</div>
+                            <div class="note-value" id="board-row-5-8-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-5-8-note-6">7</div>
+                            <div class="note-value" id="board-row-5-8-note-7">8</div>
+                            <div class="note-value" id="board-row-5-8-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+            </div>
+            <div class="board-row" id="board-row-6">
+                <div class="number-block" id="board-row-6-0" coord="6-0-6">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-6-0-note-0">1</div>
+                            <div class="note-value" id="board-row-6-0-note-1">2</div>
+                            <div class="note-value" id="board-row-6-0-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-0-note-3">4</div>
+                            <div class="note-value" id="board-row-6-0-note-4">5</div>
+                            <div class="note-value" id="board-row-6-0-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-0-note-6">7</div>
+                            <div class="note-value" id="board-row-6-0-note-7">8</div>
+                            <div class="note-value" id="board-row-6-0-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-6-1" coord="6-1-6">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-6-1-note-0">1</div>
+                            <div class="note-value" id="board-row-6-1-note-1">2</div>
+                            <div class="note-value" id="board-row-6-1-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-1-note-3">4</div>
+                            <div class="note-value" id="board-row-6-1-note-4">5</div>
+                            <div class="note-value" id="board-row-6-1-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-1-note-6">7</div>
+                            <div class="note-value" id="board-row-6-1-note-7">8</div>
+                            <div class="note-value" id="board-row-6-1-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-6-2" coord="6-2-6">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-6-2-note-0">1</div>
+                            <div class="note-value" id="board-row-6-2-note-1">2</div>
+                            <div class="note-value" id="board-row-6-2-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-2-note-3">4</div>
+                            <div class="note-value" id="board-row-6-2-note-4">5</div>
+                            <div class="note-value" id="board-row-6-2-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-2-note-6">7</div>
+                            <div class="note-value" id="board-row-6-2-note-7">8</div>
+                            <div class="note-value" id="board-row-6-2-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-6-3" coord="6-3-7">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-6-3-note-0">1</div>
+                            <div class="note-value" id="board-row-6-3-note-1">2</div>
+                            <div class="note-value" id="board-row-6-3-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-3-note-3">4</div>
+                            <div class="note-value" id="board-row-6-3-note-4">5</div>
+                            <div class="note-value" id="board-row-6-3-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-3-note-6">7</div>
+                            <div class="note-value" id="board-row-6-3-note-7">8</div>
+                            <div class="note-value" id="board-row-6-3-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-6-4" coord="6-4-7">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-6-4-note-0">1</div>
+                            <div class="note-value" id="board-row-6-4-note-1">2</div>
+                            <div class="note-value" id="board-row-6-4-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-4-note-3">4</div>
+                            <div class="note-value" id="board-row-6-4-note-4">5</div>
+                            <div class="note-value" id="board-row-6-4-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-4-note-6">7</div>
+                            <div class="note-value" id="board-row-6-4-note-7">8</div>
+                            <div class="note-value" id="board-row-6-4-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-6-5" coord="6-5-7">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-6-5-note-0">1</div>
+                            <div class="note-value" id="board-row-6-5-note-1">2</div>
+                            <div class="note-value" id="board-row-6-5-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-5-note-3">4</div>
+                            <div class="note-value" id="board-row-6-5-note-4">5</div>
+                            <div class="note-value" id="board-row-6-5-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-5-note-6">7</div>
+                            <div class="note-value" id="board-row-6-5-note-7">8</div>
+                            <div class="note-value" id="board-row-6-5-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-6-6" coord="6-6-8">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-6-6-note-0">1</div>
+                            <div class="note-value" id="board-row-6-6-note-1">2</div>
+                            <div class="note-value" id="board-row-6-6-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-6-note-3">4</div>
+                            <div class="note-value" id="board-row-6-6-note-4">5</div>
+                            <div class="note-value" id="board-row-6-6-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-6-note-6">7</div>
+                            <div class="note-value" id="board-row-6-6-note-7">8</div>
+                            <div class="note-value" id="board-row-6-6-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-6-7" coord="6-7-8">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-6-7-note-0">1</div>
+                            <div class="note-value" id="board-row-6-7-note-1">2</div>
+                            <div class="note-value" id="board-row-6-7-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-7-note-3">4</div>
+                            <div class="note-value" id="board-row-6-7-note-4">5</div>
+                            <div class="note-value" id="board-row-6-7-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-7-note-6">7</div>
+                            <div class="note-value" id="board-row-6-7-note-7">8</div>
+                            <div class="note-value" id="board-row-6-7-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-6-8" coord="6-8-8">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-6-8-note-0">1</div>
+                            <div class="note-value" id="board-row-6-8-note-1">2</div>
+                            <div class="note-value" id="board-row-6-8-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-8-note-3">4</div>
+                            <div class="note-value" id="board-row-6-8-note-4">5</div>
+                            <div class="note-value" id="board-row-6-8-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-6-8-note-6">7</div>
+                            <div class="note-value" id="board-row-6-8-note-7">8</div>
+                            <div class="note-value" id="board-row-6-8-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+            </div>
+            <div class="board-row" id="board-row-7">
+                <div class="number-block" id="board-row-7-0" coord="7-0-6">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-7-0-note-0">1</div>
+                            <div class="note-value" id="board-row-7-0-note-1">2</div>
+                            <div class="note-value" id="board-row-7-0-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-0-note-3">4</div>
+                            <div class="note-value" id="board-row-7-0-note-4">5</div>
+                            <div class="note-value" id="board-row-7-0-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-0-note-6">7</div>
+                            <div class="note-value" id="board-row-7-0-note-7">8</div>
+                            <div class="note-value" id="board-row-7-0-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-7-1" coord="7-1-6">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-7-1-note-0">1</div>
+                            <div class="note-value" id="board-row-7-1-note-1">2</div>
+                            <div class="note-value" id="board-row-7-1-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-1-note-3">4</div>
+                            <div class="note-value" id="board-row-7-1-note-4">5</div>
+                            <div class="note-value" id="board-row-7-1-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-1-note-6">7</div>
+                            <div class="note-value" id="board-row-7-1-note-7">8</div>
+                            <div class="note-value" id="board-row-7-1-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-7-2" coord="7-2-6">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-7-2-note-0">1</div>
+                            <div class="note-value" id="board-row-7-2-note-1">2</div>
+                            <div class="note-value" id="board-row-7-2-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-2-note-3">4</div>
+                            <div class="note-value" id="board-row-7-2-note-4">5</div>
+                            <div class="note-value" id="board-row-7-2-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-2-note-6">7</div>
+                            <div class="note-value" id="board-row-7-2-note-7">8</div>
+                            <div class="note-value" id="board-row-7-2-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-7-3" coord="7-3-7">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-7-3-note-0">1</div>
+                            <div class="note-value" id="board-row-7-3-note-1">2</div>
+                            <div class="note-value" id="board-row-7-3-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-3-note-3">4</div>
+                            <div class="note-value" id="board-row-7-3-note-4">5</div>
+                            <div class="note-value" id="board-row-7-3-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-3-note-6">7</div>
+                            <div class="note-value" id="board-row-7-3-note-7">8</div>
+                            <div class="note-value" id="board-row-7-3-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-7-4" coord="7-4-7">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-7-4-note-0">1</div>
+                            <div class="note-value" id="board-row-7-4-note-1">2</div>
+                            <div class="note-value" id="board-row-7-4-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-4-note-3">4</div>
+                            <div class="note-value" id="board-row-7-4-note-4">5</div>
+                            <div class="note-value" id="board-row-7-4-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-4-note-6">7</div>
+                            <div class="note-value" id="board-row-7-4-note-7">8</div>
+                            <div class="note-value" id="board-row-7-4-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-7-5" coord="7-5-7">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-7-5-note-0">1</div>
+                            <div class="note-value" id="board-row-7-5-note-1">2</div>
+                            <div class="note-value" id="board-row-7-5-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-5-note-3">4</div>
+                            <div class="note-value" id="board-row-7-5-note-4">5</div>
+                            <div class="note-value" id="board-row-7-5-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-5-note-6">7</div>
+                            <div class="note-value" id="board-row-7-5-note-7">8</div>
+                            <div class="note-value" id="board-row-7-5-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-7-6" coord="7-6-8">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-7-6-note-0">1</div>
+                            <div class="note-value" id="board-row-7-6-note-1">2</div>
+                            <div class="note-value" id="board-row-7-6-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-6-note-3">4</div>
+                            <div class="note-value" id="board-row-7-6-note-4">5</div>
+                            <div class="note-value" id="board-row-7-6-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-6-note-6">7</div>
+                            <div class="note-value" id="board-row-7-6-note-7">8</div>
+                            <div class="note-value" id="board-row-7-6-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-7-7" coord="7-7-8">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-7-7-note-0">1</div>
+                            <div class="note-value" id="board-row-7-7-note-1">2</div>
+                            <div class="note-value" id="board-row-7-7-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-7-note-3">4</div>
+                            <div class="note-value" id="board-row-7-7-note-4">5</div>
+                            <div class="note-value" id="board-row-7-7-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-7-note-6">7</div>
+                            <div class="note-value" id="board-row-7-7-note-7">8</div>
+                            <div class="note-value" id="board-row-7-7-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-7-8" coord="7-8-8">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-7-8-note-0">1</div>
+                            <div class="note-value" id="board-row-7-8-note-1">2</div>
+                            <div class="note-value" id="board-row-7-8-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-8-note-3">4</div>
+                            <div class="note-value" id="board-row-7-8-note-4">5</div>
+                            <div class="note-value" id="board-row-7-8-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-7-8-note-6">7</div>
+                            <div class="note-value" id="board-row-7-8-note-7">8</div>
+                            <div class="note-value" id="board-row-7-8-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+            </div>
+            <div class="board-row" id="board-row-8">
+                <div class="number-block" id="board-row-8-0" coord="8-0-6">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-8-0-note-0">1</div>
+                            <div class="note-value" id="board-row-8-0-note-1">2</div>
+                            <div class="note-value" id="board-row-8-0-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-0-note-3">4</div>
+                            <div class="note-value" id="board-row-8-0-note-4">5</div>
+                            <div class="note-value" id="board-row-8-0-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-0-note-6">7</div>
+                            <div class="note-value" id="board-row-8-0-note-7">8</div>
+                            <div class="note-value" id="board-row-8-0-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-8-1" coord="8-1-6">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-8-1-note-0">1</div>
+                            <div class="note-value" id="board-row-8-1-note-1">2</div>
+                            <div class="note-value" id="board-row-8-1-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-1-note-3">4</div>
+                            <div class="note-value" id="board-row-8-1-note-4">5</div>
+                            <div class="note-value" id="board-row-8-1-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-1-note-6">7</div>
+                            <div class="note-value" id="board-row-8-1-note-7">8</div>
+                            <div class="note-value" id="board-row-8-1-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-8-2" coord="8-2-6">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-8-2-note-0">1</div>
+                            <div class="note-value" id="board-row-8-2-note-1">2</div>
+                            <div class="note-value" id="board-row-8-2-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-2-note-3">4</div>
+                            <div class="note-value" id="board-row-8-2-note-4">5</div>
+                            <div class="note-value" id="board-row-8-2-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-2-note-6">7</div>
+                            <div class="note-value" id="board-row-8-2-note-7">8</div>
+                            <div class="note-value" id="board-row-8-2-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-8-3" coord="8-3-7">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-8-3-note-0">1</div>
+                            <div class="note-value" id="board-row-8-3-note-1">2</div>
+                            <div class="note-value" id="board-row-8-3-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-3-note-3">4</div>
+                            <div class="note-value" id="board-row-8-3-note-4">5</div>
+                            <div class="note-value" id="board-row-8-3-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-3-note-6">7</div>
+                            <div class="note-value" id="board-row-8-3-note-7">8</div>
+                            <div class="note-value" id="board-row-8-3-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-8-4" coord="8-4-7">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-8-4-note-0">1</div>
+                            <div class="note-value" id="board-row-8-4-note-1">2</div>
+                            <div class="note-value" id="board-row-8-4-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-4-note-3">4</div>
+                            <div class="note-value" id="board-row-8-4-note-4">5</div>
+                            <div class="note-value" id="board-row-8-4-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-4-note-6">7</div>
+                            <div class="note-value" id="board-row-8-4-note-7">8</div>
+                            <div class="note-value" id="board-row-8-4-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-8-5" coord="8-5-7">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-8-5-note-0">1</div>
+                            <div class="note-value" id="board-row-8-5-note-1">2</div>
+                            <div class="note-value" id="board-row-8-5-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-5-note-3">4</div>
+                            <div class="note-value" id="board-row-8-5-note-4">5</div>
+                            <div class="note-value" id="board-row-8-5-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-5-note-6">7</div>
+                            <div class="note-value" id="board-row-8-5-note-7">8</div>
+                            <div class="note-value" id="board-row-8-5-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-8-6" coord="8-6-8">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-8-6-note-0">1</div>
+                            <div class="note-value" id="board-row-8-6-note-1">2</div>
+                            <div class="note-value" id="board-row-8-6-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-6-note-3">4</div>
+                            <div class="note-value" id="board-row-8-6-note-4">5</div>
+                            <div class="note-value" id="board-row-8-6-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-6-note-6">7</div>
+                            <div class="note-value" id="board-row-8-6-note-7">8</div>
+                            <div class="note-value" id="board-row-8-6-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-8-7" coord="8-7-8">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-8-7-note-0">1</div>
+                            <div class="note-value" id="board-row-8-7-note-1">2</div>
+                            <div class="note-value" id="board-row-8-7-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-7-note-3">4</div>
+                            <div class="note-value" id="board-row-8-7-note-4">5</div>
+                            <div class="note-value" id="board-row-8-7-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-7-note-6">7</div>
+                            <div class="note-value" id="board-row-8-7-note-7">8</div>
+                            <div class="note-value" id="board-row-8-7-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+                <div class="number-block" id="board-row-8-8" coord="8-8-8">
+                    <div class="note">
+                        <div>
+                            <div class="note-value" id="board-row-8-8-note-0">1</div>
+                            <div class="note-value" id="board-row-8-8-note-1">2</div>
+                            <div class="note-value" id="board-row-8-8-note-2">3</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-8-note-3">4</div>
+                            <div class="note-value" id="board-row-8-8-note-4">5</div>
+                            <div class="note-value" id="board-row-8-8-note-5">6</div>
+                        </div>
+                        <div>
+                            <div class="note-value" id="board-row-8-8-note-6">7</div>
+                            <div class="note-value" id="board-row-8-8-note-7">8</div>
+                            <div class="note-value" id="board-row-8-8-note-8">9</div>
+                        </div>
+                    </div>
+                    <div class="number-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tool-section">
+        <div class="tools">
+            <div id="note" class="tool-button">
+                <div class="tool-button-icon">
+                    <img src="assets/sudoku/fill.svg">
+                </div>
+                <div class="tool-button-text">Notes</div>
+            </div>
+            <div id="erase" class="tool-button">
+                <div class="tool-button-icon">
+                    <img src="assets/sudoku/erase.svg">
+                </div>
+                <div class="tool-button-text">Erase</div>
+            </div>
+            <div id="hints" class="tool-button">
+                <div class="tool-button-icon">
+                    <img src="assets/sudoku/hint.svg">
+                </div>
+                <div class="tool-button-text">Hints</div>
+            </div>
+        </div>
+        <div class="number-selection">
+            <div class="number-block" id="selection-1">
+                <div class="remains">1</div>
+                <div>1</div>
+            </div>
+            <div class="number-block" id="selection-2">
+                <div class="remains"></div>
+                <div>2</div>
+            </div>
+            <div class="number-block" id="selection-3">
+                <div class="remains"></div>
+                <div>3</div>
+            </div>
+            <div class="number-block" id="selection-4">
+                <div class="remains"></div>
+                <div>4</div>
+            </div>
+            <div class="number-block" id="selection-5">
+                <div class="remains"></div>
+                <div>5</div>
+            </div>
+            <div class="number-block" id="selection-6">
+                <div class="remains"></div>
+                <div>6</div>
+            </div>
+            <div class="number-block" id="selection-7">
+                <div class="remains"></div>
+                <div>7</div>
+            </div>
+            <div class="number-block" id="selection-8">
+                <div class="remains"></div>
+                <div>8</div>
+            </div>
+            <div class="number-block" id="selection-9">
+                <div class="remains"></div>
+                <div>9</div>
+            </div>
+        </div>
+    </div>
+    <div class="difficulty-section">
+        <div class="difficulty-item" difficulty="0">Easy</div>
+        <div class="difficulty-item" difficulty="1">Medium</div>
+        <div class="difficulty-item" difficulty="2">Hard</div>
+        <div class="difficulty-item" difficulty="3">Expert</div>
+        <div class="difficulty-item" difficulty="4">Master</div>
+        <div class="difficulty-item" difficulty="5">Grandmaster</div>
+    </div>
+
+    <script src="js/sudoku.js"></script>
+</body>
+</html>

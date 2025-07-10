@@ -86,6 +86,15 @@
         }
     }
 
+    /**
+     * Initialize the game, and add mouse events.
+     * When mouse clicked a tested (already flipped with 0-8 mine nearby) pile,
+     * then quickly flip all nearby safe pile.
+     * When mouse clicked a mine, end game.
+     *
+     * @param height, number of row of game,
+     * @param width, number of colum of game.
+     * @param mine, total number of mine on the board.*/
     function initGame(height, width, mine) {
         clearInterval(timerHost);
         setGameBoardPosition(width, height);
@@ -96,6 +105,8 @@
         initTimer();
         let map = [], mouseDown = false, blockArr = [], firstClick = true, remainingMine = mine;
         let face = document.getElementById('face-icon'), facePressed = false;
+        face.classList.remove('win', 'lose');
+        face.classList.add('unpressed');
         face.onmousedown = ()=>{
             facePressed = true;
             face.classList.add('pressed');
@@ -131,7 +142,7 @@
                 block.setAttribute('coord', `${y}-${x}`);
                 block.classList.add('game-block', 'closed');
                 row.append(block);
-                rowData.push(0);
+                rowData.push(0); // init board, a y * x array, 0 value == empty, 9 == mine.
                 block.onmousedown = (e) => {
                     if (e.button === 0) {
                         mouseDown = true;
@@ -139,16 +150,20 @@
                         block.classList.remove('closed');
                     }
                 }
+                // mouse click (up in fact)
                 block.onmouseup = (e) => {
                     if (e.button === 0 && mouseDown) {
+                        let y = block.getAttribute('coord').split('-')[0] - 0,
+                            x = block.getAttribute('coord').split('-')[1] - 0;
+
                         mouseDown = false;
                         if (firstClick){
                             firstClick = false;
                             setTimer();
+                            generateBoard([y, x]);
                         }
                         block.classList.remove('pressed');
-                        let y = block.getAttribute('coord').split('-')[0] - 0,
-                            x = block.getAttribute('coord').split('-')[1] - 0;
+
                         if(!block.classList.contains('flagged')){
                             if (!block.classList.contains('fixed')) {
                                 block.classList.add('fixed');
@@ -211,6 +226,7 @@
                         block.classList.add('closed');
                     }
                 }
+                // Right click event. Add flag and remove flag
                 block.oncontextmenu = () => {
                     if (!block.classList.contains('fixed')) {
                         if (block.classList.contains('flagged')) {
@@ -233,14 +249,26 @@
             mineArea.append(row);
             blockArr.push(rowBlock);
         }
-        generateBoard();
+        // generateBoard();
 
-        function generateBoard() {
+        /**
+         * Generate the mine position after the first click.
+         *
+         * @param initPos, an array of the first pile coordinate.
+         * */
+        function generateBoard(initPos=[]) {
             let mineMap = new Map();
             while (mineMap.size < mine) {
+                // randomly pick the x and y value for mine.
+                // add them to hash map, util size of map == total mine.
+                // the maximum mine is way too small, we do not care about the generate (randomly fulfill map) time.
                 let x = Math.floor(Math.random() * (width)), y = Math.floor(Math.random() * height);
-                map[y][x] = 9;
-                mineMap.set(x + ' ' + y, "");
+                if(x !== initPos[1] && y !== initPos[0]){
+                    // the first flapped always safe.
+                    map[y][x] = 9;
+                    mineMap.set(x + ' ' + y, "");
+                }
+
             }
             let newMap = [];
             for (let y = 0; y < map.length; y++) {

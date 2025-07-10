@@ -1,0 +1,175 @@
+:root{
+    --block-size: 3em;
+    --note-size: calc(var(--block-size) / 3);
+    --board-size: calc(var(--block-size) * 9);
+
+    --border-color: #000;
+}
+
+body{
+    user-select: none;
+
+}
+
+.game-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.board-section{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    width: var(--board-size);
+    height: var(--board-size);
+
+    border: #000 2px solid;
+    padding-bottom: 2px;
+}
+
+.board-row{
+    display: flex;
+}
+
+.board-row:nth-child(3), .board-row:nth-child(6){
+    border-bottom: var(--border-color) 1px solid;
+}
+
+.number-block:nth-child(3), .number-block:nth-child(6){
+    box-shadow: inset -1px 0 0 1px var(--border-color);
+}
+.number-block{
+    box-shadow: inset 0 0 0 1px var(--border-color);
+    width: var(--block-size);
+    height: var(--block-size);
+    justify-content: center;
+    cursor: pointer;
+}
+.board-row .note{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.board-row .note div{
+    display: flex;
+    justify-content: center;
+}
+
+.board-row .note .note-value{
+    width: var(--note-size);
+    height: var(--note-size);
+    font-size: var(--note-size);
+    line-height: var(--note-size);
+}
+
+.number-fill{
+    width: 100%;
+    height: 100%;
+    font-size: var(--block-size);
+    line-height: var(--note-size);
+    text-align: center;
+    color: #2244ff;
+}
+
+.solid-fill{
+    color: #000 !important;
+}
+
+.block-hover{
+    background: #0f0;
+}
+
+.difficulty-section{
+    position: absolute;
+    right: 5em;
+    top: 2em;
+}
+.difficulty-item{
+    font-size: 2em;
+    line-height: 2em;
+    text-align: center;
+    margin: 0.5em 0;
+    border-radius: 1em;
+    background: #00f;
+    color: #fff;
+    width: 7em;
+    cursor: pointer;
+}
+
+.tool-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-section .tools{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+
+.tool-section .number-selection{
+    display: flex;
+    justify-content: center;
+}
+
+.tool-section .number-selection .number-block{
+    margin: 0 1em;
+    height: 4em;
+    width: 2em;
+
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: none;
+    background: aqua;
+    position: sticky;
+}
+
+.tool-section .number-selection .number-block div:nth-child(2){
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    text-align: center;
+    line-height: 2em;
+}
+
+.tool-section .number-selection .number-block .remains{
+    position: absolute;
+    right: 0.3em;
+    font-size: 0.6em;
+}
+
+.tool-section .tool-button{
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5em;
+    background: #0f0;
+    margin: 0 1em;
+    padding: 0.5em 0.5em;
+    height: 2.5em;
+    cursor: pointer;
+}
+
+.tool-section .tool-button .tool-button-icon{
+    /*height: 2em;*/
+    /*width: 2em;*/
+}
+
+.tool-section .tool-button .tool-button-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.tool-section .tool-button .tool-button-text{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    line-height: 1.25em;
+    margin-left: 0.1em;
+}
+
+.current-selected{
+    background: #fb7299;
+}
